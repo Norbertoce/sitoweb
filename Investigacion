@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Botones</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Propuesta para un Centro de Investigación</h1>
+        <button id="btnDefiniciones">Definiciones</button>
+        <button id="btnObjetivo">Objetivo</button>
+        <button id="btnJustificacion">Justificación</button>
+        <button id="btnVision">Visión</button>
+        <button id="btnMision">Misión</button>
+        <button id="btnProblema">Planteamiento del Problema</button>
+        <button id="btnSolucion">Solución Propuesta</button>
+        <button id="btnLineas">Líneas de Investigación</button>
+        <button id="btnCientificos">Argumentos Científicos</button>
+        <button id="btnPragmaticos">Argumentos Pragmáticos</button>
+        <button id="btnMateriales">Recursos Materiales</button>
+        <button id="btnFinancieros">Recursos Financieros</button>
+    </div>
+
+    <script>
+        // Event listeners para los botones
+        document.getElementById('btnDefiniciones').addEventListener('click', function() {
+            alert('Has hecho clic en el botón Definiciones');
+        });
+
+        document.getElementById('btnObjetivo').addEventListener('click', function() {
+            alert('Has hecho clic en el botón Objetivo');
+        });
+
+        document.getElementById('btnJustificacion').addEventListener('click', function() {
+            alert('Has hecho clic en el botón Justificación');
+        });
+
+        document.getElementById('btnVision').addEventListener('click', function() {
+            alert('Has hecho clic en el botón Visión');
+        });
+
+        document.getElementById('btnMision').addEventListener('click', function() {
+            alert('Has hecho clic en el botón Misión');
+        });
