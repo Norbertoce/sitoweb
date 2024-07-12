@@ -3,106 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página con Botones</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        .container {
-            max-width: 600px;
-            margin: auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        button {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px 20px;
-            font-size: 1em;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <title>Propuesta para un Centro de Investigación en CECYTE Morelos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Propuesta para un Centro de Investigación</h1>
-        <button id="btnDefiniciones">Definiciones</button>
-        <button id="btnObjetivo">Objetivo</button>
-        <button id="btnJustificacion">Justificación</button>
-        <button id="btnVision">Visión</button>
-        <button id="btnMision">Misión</button>
-        <button id="btnProblema">Planteamiento del Problema</button>
-        <button id="btnSolucion">Solución Propuesta</button>
-        <button id="btnLineas">Líneas de Investigación</button>
-        <button id="btnCientificos">Argumentos Científicos</button>
-        <button id="btnPragmaticos">Argumentos Pragmáticos</button>
-        <button id="btnMateriales">Recursos Materiales</button>
-        <button id="btnFinancieros">Recursos Financieros</button>
-    </div>
+    <header>
+        <h1>Propuesta para un Centro de Investigación en el CECYTE Morelos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="definiciones">
+        <h2>Definiciones Clave</h2>
+        <p><strong>ESP32:</strong> El ESP32 es un microcontrolador de bajo costo y consumo de energía que integra Wi-Fi y Bluetooth en un solo chip...</p>
+        
+        <p><strong>Internet de las Cosas (IoT):</strong> El Internet de las Cosas se refiere a la red de dispositivos físicos conectados a internet...</p>
+        
+        <p>Estos conceptos son fundamentales para comprender cómo el ESP32 y el IoT pueden aplicarse en el contexto educativo y tecnológico del Centro de Investigación propuesto en CECYTE Morelos...</p>
+        
+        <h3>Además, para complementar las definiciones anteriores, se incluyen los siguientes conceptos:</h3>
+        <p><strong>Ciencia de Datos:</strong> La Ciencia de Datos es un campo interdisciplinario que utiliza métodos científicos, procesos automáticos y algoritmos para extraer conocimiento y perspectivas significativas a partir de datos...</p>
+        
+        <p><strong>Análisis de Datos:</strong> El Análisis de Datos es el proceso de inspeccionar, limpiar y modelar datos con el objetivo de descubrir información útil...</p>
+    </section>
+    
+    <section id="introduccion">
+        <h2>Introducción</h2>
+        <p>En el dinámico escenario de la educación media superior, marcado por desafíos constantes para satisfacer las demandas cambiantes del mercado laboral y social, el Colegio de Estudios Científicos y Tecnológicos del Estado de Morelos (CECyTE Morelos) se enfrenta a la urgente necesidad de establecer un Centro de Investigación...</p>
+    </section>
+    
+    <section id="justificacion">
+        <h2>Justificación</h2>
+        <p>El establecimiento de un Centro de Investigación dentro de CECYTE Morelos es fundamental para abordar de manera efectiva los desafíos educativos y académicos que enfrenta la institución...</p>
+    </section>
+    
+    <!-- Aquí seguirían las demás secciones como Objetivo, Misión, Visión, Planteamiento del Problema, etc. -->
 
-    <script>
-        // Event listeners para los botones
-        document.getElementById('btnDefiniciones').addEventListener('click', function() {
-            alert('Has hecho clic en el botón Definiciones');
-        });
-
-        document.getElementById('btnObjetivo').addEventListener('click', function() {
-            alert('Has hecho clic en el botón Objetivo');
-        });
-
-        document.getElementById('btnJustificacion').addEventListener('click', function() {
-            alert('Has hecho clic en el botón Justificación');
-        });
-
-        document.getElementById('btnVision').addEventListener('click', function() {
-            alert('Has hecho clic en el botón Visión');
-        });
-
-        document.getElementById('btnMision').addEventListener('click', function() {
-            alert('Has hecho clic en el botón Misión');
-        });
-
-        document.getElementById('btnProblema').addEventListener('click', function() {
-            alert('Has hecho clic en el botón Planteamiento del Problema');
-        });
-
-        document.getElementById('btnSolucion').addEventListener('click', function() {
-            alert('Has hecho clic en el botón Solución Propuesta');
-        });
-
-        document.getElementById('btnLineas').addEventListener('click', function() {
-            alert('Has hecho clic en el botón Líneas de Investigación');
-        });
-
-        document.getElementById('btnCientificos').addEventListener('click', function() {
-            alert('Has hecho clic en el botón Argumentos Científicos');
-        });
-
-        document.getElementById('btnPragmaticos').addEventListener('click', function() {
-            alert('Has hecho clic en el botón Argumentos Pragmáticos');
-        });
-
-        document.getElementById('btnMateriales').addEventListener('click', function() {
-            alert('Has hecho clic en el botón Recursos Materiales');
-        });
-
-        document.getElementById('btnFinancieros').addEventListener('click', function() {
-            alert('Has hecho clic en el botón Recursos Financieros');
-        });
-    </script>
+    <footer>
+        <p>&copy; 2024 CECYTE Morelos. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
