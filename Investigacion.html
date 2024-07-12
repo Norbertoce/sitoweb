@@ -31,10 +31,24 @@
         .orange-button:hover {
             background-color: darkorange;
         }
+        .green-button {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px auto;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .green-button:hover {
+            background-color: darkgreen;
+        }
 
         @media screen and (max-width: 768px) {
             /* Estilos para dispositivos móviles */
-            .orange-button {
+            .orange-button, .green-button {
                 display: block;
                 margin: 10px auto;
                 width: 80%; /* Ancho del botón para dispositivos móviles */
@@ -56,13 +70,25 @@
                 btnInicio.className = 'orange-button';
                 btnInicio.textContent = 'Inicio';
 
+                var btnAnexosInicio = document.createElement('a');
+                btnAnexosInicio.href = 'Anexos.html';
+                btnAnexosInicio.className = 'green-button';
+                btnAnexosInicio.textContent = 'Anexos';
+
                 var btnFinal = document.createElement('a');
                 btnFinal.href = 'index.html';
                 btnFinal.className = 'orange-button';
                 btnFinal.textContent = 'Inicio';
 
+                var btnAnexosFinal = document.createElement('a');
+                btnAnexosFinal.href = 'Anexos.html';
+                btnAnexosFinal.className = 'green-button';
+                btnAnexosFinal.textContent = 'Anexos';
+
                 // Insertar botones al inicio y final de la página
                 document.body.insertBefore(btnInicio, document.body.firstChild);
+                document.body.insertBefore(btnAnexosInicio, document.body.firstChild);
+                document.body.appendChild(btnAnexosFinal);
                 document.body.appendChild(btnFinal);
             }
 
@@ -164,4 +190,3 @@
     </footer>
 </body>
 </html>
-
