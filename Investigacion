@@ -39,39 +39,21 @@
 </head>
 <body>
     <div class="container">
-        <h1>Propuesta para un Centro de Investigación</h1>
-        <button id="btnDefiniciones">Definiciones</button>
-        <button id="btnObjetivo">Objetivo</button>
-        <button id="btnJustificacion">Justificación</button>
-        <button id="btnVision">Visión</button>
-        <button id="btnMision">Misión</button>
-        <button id="btnProblema">Planteamiento del Problema</button>
-        <button id="btnSolucion">Solución Propuesta</button>
-        <button id="btnLineas">Líneas de Investigación</button>
-        <button id="btnCientificos">Argumentos Científicos</button>
-        <button id="btnPragmaticos">Argumentos Pragmáticos</button>
-        <button id="btnMateriales">Recursos Materiales</button>
-        <button id="btnFinancieros">Recursos Financieros</button>
+        <h1>Propuesta para un Centro de Investigación </h1>
+        <button id="btnCentro">Centro de Investigación</button>
+        <button id="btnAnexos">Anexos</button>
     </div>
 
     <script>
         // Event listeners para los botones
-        document.getElementById('btnDefiniciones').addEventListener('click', function() {
-            alert('Has hecho clic en el botón Definiciones');
+        document.getElementById('btnCentro').addEventListener('click', function() {
+            window.location.href = 'Investigacion.html';
         });
 
-        document.getElementById('btnObjetivo').addEventListener('click', function() {
-            alert('Has hecho clic en el botón Objetivo');
+        document.getElementById('btnAnexos').addEventListener('click', function() {
+            alert('Has hecho clic en el botón Anexos');
+            // Aquí puedes agregar más acciones según sea necesario
         });
-
-        document.getElementById('btnJustificacion').addEventListener('click', function() {
-            alert('Has hecho clic en el botón Justificación');
-        });
-
-        document.getElementById('btnVision').addEventListener('click', function() {
-            alert('Has hecho clic en el botón Visión');
-        });
-
-        document.getElementById('btnMision').addEventListener('click', function() {
-            alert('Has hecho clic en el botón Misión');
-        });
+    </script>
+</body>
+</html>
