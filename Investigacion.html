@@ -17,6 +17,29 @@
         p {
             color: #666;
         }
+        .orange-button {
+            background-color: orange;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px auto;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .orange-button:hover {
+            background-color: darkorange;
+        }
+
+        @media screen and (max-width: 768px) {
+            /* Estilos para dispositivos móviles */
+            .orange-button {
+                display: block;
+                margin: 10px auto;
+                width: 80%; /* Ancho del botón para dispositivos móviles */
+            }
+        }
     </style>
 </head>
 <body>
@@ -24,7 +47,28 @@
         <h1>Propuesta para un Centro de Investigación en el CECYTE Morelos</h1>
     </header>
 
-    <button onclick="window.location.href='index.html'" style="margin: 10px;">Inicio</button>
+    <script>
+        // Función para crear y añadir botones al inicio y final del body
+        document.addEventListener('DOMContentLoaded', function() {
+            function addButtons() {
+                var btnInicio = document.createElement('a');
+                btnInicio.href = 'index.html';
+                btnInicio.className = 'orange-button';
+                btnInicio.textContent = 'Inicio';
+
+                var btnFinal = document.createElement('a');
+                btnFinal.href = 'index.html';
+                btnFinal.className = 'orange-button';
+                btnFinal.textContent = 'Inicio';
+
+                // Insertar botones al inicio y final de la página
+                document.body.insertBefore(btnInicio, document.body.firstChild);
+                document.body.appendChild(btnFinal);
+            }
+
+            addButtons(); // Llamada a la función para añadir los botones
+        });
+    </script>
 
     <section id="introduction">
         <h2>Introducción</h2>
@@ -116,7 +160,6 @@
     </section>
 
     <footer>
-        <button onclick="window.location.href='index.html'" style="margin: 10px;">Inicio</button>
         <p>&copy; 2024 Propuesta para un Centro de Investigación en CECYTE Morelos. Todos los derechos reservados.</p>
     </footer>
 </body>
