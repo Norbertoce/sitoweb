@@ -83,6 +83,26 @@
                 btnFinal.href = 'index.html';
                 btnFinal.className = 'orange-button';
                 btnFinal.textContent = 'Inicio';
+				
+				var btnAnexo1 = document.createElement('a');
+            btnAnexo1.href = 'anexo1.html'; // Cambia el href según el anexo correspondiente
+            btnAnexo1.className = 'green-button';
+            btnAnexo1.textContent = 'Anexo 1';
+
+            var btnAnexo2 = document.createElement('a');
+            btnAnexo2.href = 'anexo2.html'; // Cambia el href según el anexo correspondiente
+            btnAnexo2.className = 'green-button';
+            btnAnexo2.textContent = 'Anexo 2';
+
+            var btnAnexo3 = document.createElement('a');
+            btnAnexo3.href = 'anexo3.html'; // Cambia el href según el anexo correspondiente
+            btnAnexo3.className = 'green-button';
+            btnAnexo3.textContent = 'Anexo 3';
+
+            var btnAnexo4 = document.createElement('a');
+            btnAnexo4.href = 'anexo4.html'; // Cambia el href según el anexo correspondiente
+            btnAnexo4.className = 'green-button';
+            btnAnexo4.textContent = 'Anexo 4';
 
                 var btnAnexosFinal = document.createElement('a');
                 btnAnexosFinal.href = 'Anexos.html';
@@ -94,6 +114,10 @@
                 document.body.insertBefore(btnAnexosInicio, document.body.firstChild);
                 document.body.appendChild(btnAnexosFinal);
                 document.body.appendChild(btnFinal);
+				document.body.insertBefore(btnAnexo1, document.body.firstChild);
+            document.body.insertBefore(btnAnexo2, document.body.firstChild);
+            document.body.insertBefore(btnAnexo3, document.body.firstChild);
+            document.body.insertBefore(btnAnexo4, document.body.firstChild);
             }
 
             addButtons(); // Llamada a la función para añadir los botones
@@ -206,20 +230,32 @@
      <section id="resources"><h2 class="Estilo2">Recursos</h2>
         <h3 class="Estilo2">Materiales</h3>
         <ul class="Estilo2">
-            <li>Computadoras y talleres de programación.</li>
-            <li>Equipo de Robótica e impresoras 3D.</li>
-            <li>Internet de alta velocidad y conectividad.</li>
-            <li>Sistemas de seguridad y mantenimiento.</li>
+        <li>Compuaula.</li>
+        <li>	Taller de programación.</li>
+        <li>	Equipo de Robótica.</li>
+        <li>	Internet.</li>
+        <li>	Conectividad y Redes: Conexión a internet de alta velocidad y redes internas adecuadas para soportar las necesidades de investigación y colaboración.</li>
+        <li>	Impresora normal.</li>
+        <li>	Impresora 3D.</li>
+        <li>	Seguridad y Mantenimiento: Sistemas de seguridad para proteger equipos y datos sensibles, y mantenimiento regular de infraestructuras físicas y tecnológicas.        </li>
         </ul>
         <h3 class="Estilo2">Financieros</h3>
-        <ul class="Estilo2">
-            <li>Fondos para papelería, filamento para impresión 3D, internet y energía eléctrica.</li>
+        <ul>
+          <li>Papelería.</li>
+          <li> Filamento impresor 3d.</li>
+          <li> Internet.</li>
+          <li> Energía eléctrica
+          </li>
         </ul>
-        <h3 class="Estilo2">Humanos</h3>
-        <ul class="Estilo2">
-            <li>Personal investigador, equipo docente especializado, equipo de apoyo técnico y estudiantes investigadores.</li>
-            <li>Comité Asesor Externo.</li>
-        </ul>
+              <h3 class="Estilo2">Humanos</h3>
+          <p class="Estilo2">
+       <strong>Personal Investigador: </strong>Contratación de investigadores con experiencia en educación, tecnología y ciencia, capaces de liderar proyectos innovadores y aplicados que aborden las problemáticas específicas de CECYTE Morelos.</p>
+          <p class="Estilo2"> <strong>Equipo Docente Especializado :</strong> Integración de docentes altamente capacitados y motivados, quienes no solo impartirán conocimientos sino que también participarán activamente en la investigación y desarrollo de nuevas metodologías educativas.</p>
+          <p class="Estilo2"> <strong>Equipo de Apoyo Técnico.</strong>            Alumnos que cursan carreras, maestría doctorada en las siguientes áreas de:
+            Lic. en docencia, Lic. en educación, Lic. Pedagogía.
+            Ingeniería en sistemas, Robótica, Lic. en informática.            </p>
+          <p class="Estilo2"><strong>Comité Asesor Externo:</strong> Formación de un comité consultivo externo compuesto por expertos en educación, tecnología y gestión académica, que brinden orientación estratégica y aseguren la relevancia y calidad de las iniciativas del Centro de Investigación.
+            Estudiantes Investigadores: Fomento de programas que involucren a los estudiantes en proyectos de investigación desde etapas tempranas, proporcionándoles experiencia práctica y fomentando su desarrollo académico y profesional.</p>
     </section>
 
      <span class="Estilo2">
